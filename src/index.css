@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .rotate {
+    animation: rotate .7s infinite linear;
+  }
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .animeLeft {
+    animation: animeLeft .7s;
+  }
+  @keyframes animeLeft {
+    from {
+      transform: translateX(-20px);
+      opacity: 0;
+    } to {
+      transform: inherit;
+      opacity: 1;
+    }
+  }
+}
